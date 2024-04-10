@@ -33,6 +33,18 @@ int _printf(const char* format, ...) {
 		else if (format[i] == '%' && format[i + 1] == '%') {
 			_putchar('%');
 		}
+		
+		/*If there is c after % print character*/
+		else if (format[i] == '%' && format[i + 1] == 'c') {
+			_putchar(va_arg(argumentList, int));
+			i++;
+		}
+		
+		/*If there is s after % print string*/
+		else if (format[i] == '%' && format[i + 1] == 's') {
+			_puts(va_arg(argumentList, char *));
+			i++;
+		}
 	}
 	
 	va_end(argumentList);
