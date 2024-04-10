@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include "_putchar.c"
+#include "_printf.c"
+#include "_puts.c"
+#include "_print_integer.c"
+
 /*Function prototypes*/
 int _printf(const char* format, ...);
 int _putchar(char c);
