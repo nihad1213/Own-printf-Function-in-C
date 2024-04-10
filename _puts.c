@@ -18,5 +18,5 @@ int _puts(char *str) {
 		}
 	}
 	
-	return length;
+	return (length);
 }

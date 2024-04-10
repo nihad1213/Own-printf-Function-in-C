@@ -45,8 +45,12 @@ int _printf(const char* format, ...) {
 			_puts(va_arg(argumentList, char *));
 			i++;
 		}
+		else if (format[i] == '%' && (format[i + 1] == 'd' || format[i + 1] == 'i')) {
+			length = _print_number(length, va_arg(argumentList, int));
+			i++;
+		}
 	}
 	
 	va_end(argumentList);
-	return length;
+	return (length);
 }
