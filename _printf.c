@@ -45,6 +45,7 @@ int _printf(const char* format, ...) {
 			_puts(va_arg(argumentList, char *));
 			i++;
 		}
+		/*If there is d or i after '%' sign print integer*/
 		else if (format[i] == '%' && (format[i + 1] == 'd' || format[i + 1] == 'i')) {
 			length = _print_number(length, va_arg(argumentList, int));
 			i++;
