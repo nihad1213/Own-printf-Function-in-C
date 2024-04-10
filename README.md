@@ -11,7 +11,7 @@ This C program implements a simplified version of the `printf` function. The `pr
 
 ## Compilation
 
-To compile the program, use a C compiler such as GCC:
+To run the program, use a C compiler such as GCC:
 
 ```bash
 gcc main.c
