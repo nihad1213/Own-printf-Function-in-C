@@ -1,8 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
-#include "_printf.c"
-#include "_puts.c"
-#include "_print_integer.c"
 
 int main(void) {
 
